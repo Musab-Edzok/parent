@@ -33,6 +33,55 @@
   <title>Flippr Parent</title>
   <link rel="manifest" href="manifest.json">
 
+  <!-- Add some basic styles for loader -->
+  <style>
+    #loading-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    #loading-container img {
+      width: 140px;
+      height: auto;
+      max-width: 100%;
+    }
+
+    #loading-container .spinner {
+      margin-top: 20px;
+      width: 40px;
+      height: 40px;
+      border: 5px solid rgba(0, 0, 0, 0.1);
+      border-top-color: #FB5E31;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    /* Ensure responsiveness for smaller devices */
+    @media (max-width: 600px) {
+      #loading-container img {
+        width: 80px;
+      }
+
+      #loading-container .spinner {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  </style>
+
   <!-- <script>
     document.addEventListener('contextmenu', function (e) {
       e.preventDefault();
@@ -66,8 +115,28 @@
 
 <body>
 
-  <script src="flutter_bootstrap.js" async></script>
+  <!-- Add the loading container with image and spinner -->
+  <div id="loading-container">
+    <img src="icons/vertical_logo.png" alt="Logo">
+    <div class="spinner"></div>
+  </div>
 
+  <script>
+    const loadingContainer = document.getElementById('loading-container');
+
+    _flutter.loader.load({
+      onEntrypointLoaded: async function (engineInitializer) {
+        const appRunner = await engineInitializer.initializeEngine();
+
+        await appRunner.runApp();
+
+        // Once the app is running, remove the loading container
+        loadingContainer.remove();
+      }
+    });
+  </script>
+
+  <script src="flutter_bootstrap.js" async></script>
 </body>
 
 </html>
