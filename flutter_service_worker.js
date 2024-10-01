@@ -360,7 +360,7 @@ const RESOURCES = {"assets/AssetManifest.bin": "d419c3902376f0a2e7f5e85b38b522e4
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
 "firebase-messaging-sw.js": "5ed6f280f5550f96259462e01f85aa6e",
 "flutter.js": "f393d3c16b631f36852323de8e583132",
-"flutter_bootstrap.js": "d2af58013694d8e86f9b06b3072422b0",
+"flutter_bootstrap.js": "1d640bc3071301cb61d1e195c9e2f8f5",
 "icons/apple-touch-icon.png": "0fd04fed788273cb07daab88e866342e",
 "icons/favicon.ico": "0b83baa65af96abfb4177b1ca3406cd6",
 "icons/icon-192-maskable.png": "c473f3eab7649c1943d94fd5e2c58d2f",
@@ -372,7 +372,7 @@ const RESOURCES = {"assets/AssetManifest.bin": "d419c3902376f0a2e7f5e85b38b522e4
 "icons/vertical_logo.png": "f2f33e8cf552dd26d043cd666c4dd78a",
 "index.html": "ce5e3856be46f95c3da0db02a5bf70a1",
 "/": "ce5e3856be46f95c3da0db02a5bf70a1",
-"main.dart.js": "99ecccb096bd98a66e19aa21d1114097",
+"main.dart.js": "b5da6e614c867ad12954e14af8a52fc7",
 "manifest.json": "7d99036cbca472f1e1f39a4868f14f85",
 "version.json": "dd47c2dadc788e6290bf6bc16a3271f0"};
 // The application shell files that are downloaded before a service worker can
