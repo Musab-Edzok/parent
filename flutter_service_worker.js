@@ -360,7 +360,7 @@ const RESOURCES = {"assets/AssetManifest.bin": "d419c3902376f0a2e7f5e85b38b522e4
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
 "firebase-messaging-sw.js": "5ed6f280f5550f96259462e01f85aa6e",
 "flutter.js": "f393d3c16b631f36852323de8e583132",
-"flutter_bootstrap.js": "1d640bc3071301cb61d1e195c9e2f8f5",
+"flutter_bootstrap.js": "ff6e2b80a571debde479c212e6bb74b3",
 "icons/apple-touch-icon.png": "0fd04fed788273cb07daab88e866342e",
 "icons/favicon.ico": "0b83baa65af96abfb4177b1ca3406cd6",
 "icons/icon-192-maskable.png": "c473f3eab7649c1943d94fd5e2c58d2f",
